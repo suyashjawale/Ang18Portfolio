@@ -1,0 +1,1 @@
+import{Q as i,na as o,oa as s,qa as a,ra as p}from"./chunk-HZCGSCDF.js";var m=(()=>{let e=class e{};e.\u0275fac=function(n){return new(n||e)},e.\u0275cmp=i({type:e,selectors:[["app-snippets-l"]],standalone:!0,features:[p],decls:2,vars:0,template:function(n,l){n&1&&(o(0,"p"),a(1,"snippets-l works!"),s())}});let t=e;return t})();export{m as SnippetsLComponent};
