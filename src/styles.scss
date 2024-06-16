@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+@import '@fontsource/poppins';
+
+$form-range-thumb-width: 0.7rem;
+$form-range-track-height: 0.15rem;
+$form-range-thumb-bg: white;
+$form-range-track-bg: rgb(226, 226, 226);
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+    background-color: #15202b !important;
+}
+
+.bg-custom{
+    background-color: #15202b !important;
+}
+@import '../node_modules/bootstrap/scss/bootstrap';
