@@ -6,9 +6,18 @@
 				<div class="avatar-name">
 					Suyash Jawale
 				</div>
-				<small>
-					Pune, MH
-				</small>
+				<div class="d-flex align-items-center">
+					<div class="boxContainer d-flex justify-content-between me-2">
+						<div class="box box1"></div>
+						<div class="box box2"></div>
+						<div class="box box3"></div>
+						<div class="box box4"></div>
+						<div class="box box5"></div>
+					</div>
+					<small>
+						Naadiniyan
+					</small>
+				</div>
 			</div>
 		</div>
 		<button class="btn btn-transparent px-0 border-0 shadow-none" type="button" data-bs-toggle="offcanvas"
@@ -30,39 +39,66 @@
 </div>
 
 <div class="offcanvas offcanvas-start bg-custom" tabindex="-1" id="menu" aria-labelledby="menuLabel">
-	<div class="offcanvas-body py-2">
-		<div class="d-flex justify-content-between">
-			<button type="button" class="btn btn-transparent shadow-none px-0 border-0" data-bs-dismiss="offcanvas" aria-label="Close">
-				<svg width="1.7rem" height="1.7rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-			</button>
-			<div class="d-flex align-items-center ms-1">
-				<div class="boxContainer d-flex justify-content-between">
-					<div class="box box1"></div>
-					<div class="box box2"></div>
-					<div class="box box3"></div>
-					<div class="box box4"></div>
-					<div class="box box5"></div>
-				</div>	
-				<div class="ms-2">Now Playing</div>
+	<div class="offcanvas-header d-flex justify-content-end pe-0">
+		<button type="button" class="btn btn-light rounded-start-pill shadow-none py-1 pe-2 border-0" data-bs-dismiss="offcanvas" aria-label="Close">
+			<svg width="1.7rem" height="1.7rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(270)"> <g id="SVGRepo_bgCarrier" stroke-width="0"></g> <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g> <g id="SVGRepo_iconCarrier"> <path d="M19.9201 15.0501L13.4001 8.53014C12.6301 7.76014 11.3701 7.76014 10.6001 8.53014L4.08008 15.0501" stroke="#000" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> </g> </svg>
+		</button>
+	</div>
+	<div class="offcanvas-body py-2 pt-0">
+
+		<div class="row g-1">
+			<div class="col-4 text-center">
+				<div class="bg-custom-shade p-2" style="border-top-left-radius: 1rem;">
+					<div class="mt-2"><svg width="1.4rem" height="1.4rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M13.1061 22H10.8939C7.44737 22 5.72409 22 4.54903 20.9882C3.37396 19.9764 3.13025 18.2827 2.64284 14.8952L2.36407 12.9579C1.98463 10.3208 1.79491 9.00229 2.33537 7.87495C2.87583 6.7476 4.02619 6.06234 6.32691 4.69181L7.71175 3.86687C9.80104 2.62229 10.8457 2 12 2C13.1543 2 14.199 2.62229 16.2882 3.86687L17.6731 4.69181C19.9738 6.06234 21.1242 6.7476 21.6646 7.87495C22.2051 9.00229 22.0154 10.3208 21.6359 12.9579L21.3572 14.8952C20.8697 18.2827 20.626 19.9764 19.451 20.9882C18.2759 22 16.5526 22 13.1061 22ZM8.39757 15.5532C8.64423 15.2204 9.11395 15.1506 9.44671 15.3973C10.1751 15.9371 11.0542 16.2498 12.0001 16.2498C12.946 16.2498 13.8251 15.9371 14.5535 15.3973C14.8863 15.1506 15.356 15.2204 15.6026 15.5532C15.8493 15.8859 15.7795 16.3557 15.4467 16.6023C14.4743 17.3231 13.2851 17.7498 12.0001 17.7498C10.7151 17.7498 9.5259 17.3231 8.55349 16.6023C8.22072 16.3557 8.15092 15.8859 8.39757 15.5532Z" fill="#ffffff"></path> </g></svg></div>
+					<div class="my-1"><small>Home</small></div>
+				</div>
 			</div>
-			<button type="button" class="btn btn-transparent shadow-none px-0 border-0" data-bs-dismiss="offcanvas" aria-label="Close">
-				<svg width="1.7rem" height="1.7rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(270)"> <g id="SVGRepo_bgCarrier" stroke-width="0"></g> <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g> <g id="SVGRepo_iconCarrier"> <path d="M19.9201 15.0501L13.4001 8.53014C12.6301 7.76014 11.3701 7.76014 10.6001 8.53014L4.08008 15.0501" stroke="#ffff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> </g> </svg>
-			</button>
+			<div class="col-4 text-center">
+				<div class="bg-custom-shade p-2">
+					<div class="mt-2"><svg fill="#ffffff" width="1.4rem" height="1.4rem" viewBox="0 0 24.00 24.00" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" stroke-width="0.00024000000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M3,20V10H8V21H4A1,1,0,0,1,3,20ZM21,4a1,1,0,0,0-1-1H4A1,1,0,0,0,3,4V8H21ZM20,21a1,1,0,0,0,1-1V10H10V21Z"></path></g></svg></div>
+					<div class="my-1"><small>Projects</small></div>
+				</div>
+			</div>
+			<div class="col-4 text-center">
+				<div class="bg-custom-shade p-2" style="border-top-right-radius: 1rem;">
+					<div class="mt-2"><svg fill="#ffffff" width="1.4rem" height="1.4rem" viewBox="0 0 24.00 24.00" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" stroke-width="0.00024000000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M3,20V10H8V21H4A1,1,0,0,1,3,20ZM21,4a1,1,0,0,0-1-1H4A1,1,0,0,0,3,4V8H21ZM20,21a1,1,0,0,0,1-1V10H10V21Z"></path></g></svg></div>
+					<div class="my-1"><small>Projects</small></div>
+				</div>
+			</div>
+			<div class="col-4 text-center">
+				<div class="bg-custom-shade p-2" style="border-bottom-left-radius: 1rem;">
+					<div class="mt-2"><svg fill="#ffffff" width="1.4rem" height="1.4rem" viewBox="0 0 24.00 24.00" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" stroke-width="0.00024000000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M3,20V10H8V21H4A1,1,0,0,1,3,20ZM21,4a1,1,0,0,0-1-1H4A1,1,0,0,0,3,4V8H21ZM20,21a1,1,0,0,0,1-1V10H10V21Z"></path></g></svg></div>
+					<div class="my-1"><small>Projects</small></div>
+				</div>
+			</div>
+			<div class="col-4 text-center">
+				<div class="bg-custom-shade p-2">
+					<div class="mt-2"><svg fill="#ffffff" width="1.4rem" height="1.4rem" viewBox="0 0 24.00 24.00" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" stroke-width="0.00024000000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M3,20V10H8V21H4A1,1,0,0,1,3,20ZM21,4a1,1,0,0,0-1-1H4A1,1,0,0,0,3,4V8H21ZM20,21a1,1,0,0,0,1-1V10H10V21Z"></path></g></svg></div>
+					<div class="my-1"><small>Projects</small></div>
+				</div>
+			</div>
+			<div class="col-4 text-center">
+				<div class="bg-custom-shade p-2" style="border-bottom-right-radius: 1rem;">
+					<div class="mt-2"><svg fill="#ffffff" width="1.4rem" height="1.4rem" viewBox="0 0 24.00 24.00" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" stroke-width="0.00024000000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M3,20V10H8V21H4A1,1,0,0,1,3,20ZM21,4a1,1,0,0,0-1-1H4A1,1,0,0,0,3,4V8H21ZM20,21a1,1,0,0,0,1-1V10H10V21Z"></path></g></svg></div>
+					<div class="my-1"><small>Projects</small></div>
+				</div>
+			</div>
 		</div>
-		<div class="card rounded-4 mt-2" style="height: 9.3rem;">
-			<img src="nadaaniya.jpg" class="card-img rounded-3 blur-filter" style="height: 9.3rem;" alt="Music"/>
+
+		<div class="card rounded-4 mt-4" style="height: 9.3rem;">
+			<img src="nadaaniya.jpg" class="card-img rounded-3 blur-filter my-auto" style="height: 7rem;" alt="Music"/>
 			<div class="card-img-overlay">
 				<div class="row mx-0">
 					<div class="col-3 ps-0">
 					  <img src="nadaaniya.jpg" class="img-fluid rounded-4" alt="...">
 					</div>
 					<div class="col ps-1">
-						<div class="fs-5">Nadaaniyan</div>
+						<div>Nadaaniyan</div>
 						<small>Akshath Acharya</small>
 					</div>
 					<div class="col-auto p-0">
 						<button class="btn btn-transparent p-0 border-0 shadow-none">
-							<svg width="1.7rem" height="1.7rem" viewBox="0 -3 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>youtube [#ffffff]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-300.000000, -7442.000000)" fill="#ffffff"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M251.988432,7291.58588 L251.988432,7285.97425 C253.980638,7286.91168 255.523602,7287.8172 257.348463,7288.79353 C255.843351,7289.62824 253.980638,7290.56468 251.988432,7291.58588 M263.090998,7283.18289 C262.747343,7282.73013 262.161634,7282.37809 261.538073,7282.26141 C259.705243,7281.91336 248.270974,7281.91237 246.439141,7282.26141 C245.939097,7282.35515 245.493839,7282.58153 245.111335,7282.93357 C243.49964,7284.42947 244.004664,7292.45151 244.393145,7293.75096 C244.556505,7294.31342 244.767679,7294.71931 245.033639,7294.98558 C245.376298,7295.33761 245.845463,7295.57995 246.384355,7295.68865 C247.893451,7296.0008 255.668037,7296.17532 261.506198,7295.73552 C262.044094,7295.64178 262.520231,7295.39147 262.895762,7295.02447 C264.385932,7293.53455 264.28433,7285.06174 263.090998,7283.18289" id="youtube-[#ffffff]"> </path> </g> </g> </g> </g></svg>
+							<svg width="1.4rem" height="1.4rem" viewBox="0 -3 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>youtube [#ffffff]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-300.000000, -7442.000000)" fill="#ffffff"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M251.988432,7291.58588 L251.988432,7285.97425 C253.980638,7286.91168 255.523602,7287.8172 257.348463,7288.79353 C255.843351,7289.62824 253.980638,7290.56468 251.988432,7291.58588 M263.090998,7283.18289 C262.747343,7282.73013 262.161634,7282.37809 261.538073,7282.26141 C259.705243,7281.91336 248.270974,7281.91237 246.439141,7282.26141 C245.939097,7282.35515 245.493839,7282.58153 245.111335,7282.93357 C243.49964,7284.42947 244.004664,7292.45151 244.393145,7293.75096 C244.556505,7294.31342 244.767679,7294.71931 245.033639,7294.98558 C245.376298,7295.33761 245.845463,7295.57995 246.384355,7295.68865 C247.893451,7296.0008 255.668037,7296.17532 261.506198,7295.73552 C262.044094,7295.64178 262.520231,7295.39147 262.895762,7295.02447 C264.385932,7293.53455 264.28433,7285.06174 263.090998,7283.18289" id="youtube-[#ffffff]"> </path> </g> </g> </g> </g></svg>
 						</button>
 					</div>
 				</div>
