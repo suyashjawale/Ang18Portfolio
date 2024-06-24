@@ -16,6 +16,11 @@ body {
 
 .bg-custom-shade{
     background-color: #233547 !important;
+    color: white !important;
+}
+
+.bg-custom-selected{
+    background-color: #344d68 !important;
 }
 
 @import '../node_modules/bootstrap/scss/bootstrap';

@@ -1,0 +1,1 @@
+import{Ea as r,Fa as s,R as o,xa as a,ya as i}from"./chunk-JVQMVXH4.js";var d=(()=>{let e=class e{};e.\u0275fac=function(n){return new(n||e)},e.\u0275cmp=o({type:e,selectors:[["app-homepage-s"]],standalone:!0,features:[s],decls:2,vars:0,template:function(n,m){n&1&&(a(0,"p"),r(1,"homepage-s works!"),i())}});let t=e;return t})();export{d as HomepageSComponent};
