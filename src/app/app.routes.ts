@@ -27,6 +27,14 @@ export function getRoutes(): Routes {
                         path:'snippets',
                         loadComponent: () => import('./components/large/snippets-l/snippets-l.component').then(mod => mod.SnippetsLComponent),
                     },
+                    {
+                        path:'posts',
+                        loadComponent: () => import('./components/large/posts-l/posts-l.component').then(mod => mod.PostsLComponent),
+                    },
+                    {
+                        path:'playlist',
+                        loadComponent: () => import('./components/large/playlist-l/playlist-l.component').then(mod => mod.PlaylistLComponent),
+                    },
                 ]
             }
         ]
@@ -56,6 +64,14 @@ export function getRoutes(): Routes {
                 {
                     path:'snippets',
                     loadComponent: () => import('./components/small/snippets-s/snippets-s.component').then(mod => mod.SnippetsSComponent),
+                },
+                {
+                    path:'posts',
+                    loadComponent: () => import('./components/small/posts-s/posts-s.component').then(mod => mod.PostsSComponent),
+                },
+                {
+                    path:'playlist',
+                    loadComponent: () => import('./components/small/playlist-s/playlist-s.component').then(mod => mod.PlaylistSComponent),
                 },
             ]
         }
