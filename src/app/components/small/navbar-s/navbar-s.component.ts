@@ -4,14 +4,16 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 @Component({
   selector: 'app-navbar-s',
   standalone: true,
-  imports: [RouterLink,RouterLinkActive],
+  imports: [RouterLink, RouterLinkActive],
   templateUrl: './navbar-s.component.html',
   styleUrl: './navbar-s.component.scss'
 })
 export class NavbarSComponent {
-called() {
-alert("hello");
-}
+
+  makeFullScreen() {
+    document.documentElement.requestFullscreen();
+  }
+
   userAddress: string = "";
 
 }
