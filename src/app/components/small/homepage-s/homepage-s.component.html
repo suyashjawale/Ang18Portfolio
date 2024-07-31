@@ -12,14 +12,14 @@
                 <div style="font-weight: 500;">
                     Tata Consultancy Services
                </div>
-               <div class="text-small">Apr 2023 - Present &nbsp;·&nbsp; 2 yrs 2 mos</div>
+               <div class="text-small">Apr 2023 - Present &nbsp;·&nbsp; {{tcsExp[0]}} yrs {{tcsExp[1]}} mos</div>
             </div>
         </div>
     </div>
     <div class="border-start">
         <div class="ps-2 ms-1">
             <div class="font-w-500">Systems Engineer</div>
-            <div class="text-small">Apr 2023 - Present &nbsp;·&nbsp; 2 yrs 2 mos</div>
+            <div class="text-small">Apr 2023 - Present &nbsp;·&nbsp; @if(systemsEngineerExp[0]!=0){ {{systemsEngineerExp[0]}} yrs }  {{systemsEngineerExp[1]}} mos</div>
             <div class="mt-2 text-small">
                 Working on Spring, Angular 17
                 I am responsible for adding new features to the site.
@@ -52,15 +52,72 @@
     <div class="border-start">
         <div class="pt-2 ps-2 ms-1">
             <div class="font-w-500">Graduate Trainee</div>
-            <div class="text-small">Apr 2023 - Apr 2024 &nbsp;·&nbsp; 2 yrs 2 mos</div>
+            <div class="text-small">Jan 2021 - Jan 2022 &nbsp;·&nbsp; 1 year</div>
             <div class="mt-2 text-small">
-                Working on Spring, Angular 17
-                I am responsible for adding new features to the site.
+
+                <!-- <div class="d-flex mb-2">
+                    <div class="me-2">·</div>
+                    <div>
+                        <div class="font-w-500 mb-1">Attrition Analysis</div>
+
+                        <div class="d-flex mb-1">
+                            <div class="me-2">-</div>
+                            <div>
+                                Project focused on analysing and predicting the attrition time of a current employee.
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex">
+                            <div class="me-2">-</div>
+                            <div>
+                                Based on several parameters like Age, Experience, Compensation, Courses completed, Certifications acquired, Past Experiences, average time in jobs and much more. Around 64 parameters were taken into consideration.
+                            </div>
+                        </div>
+
+                        <div class="d-flex">
+                            <div class="me-2">-</div>
+                            <div>
+                                Based on several parameters like Age, Experience, Compensation, Courses completed, Certifications acquired, Past Experiences, average time in jobs and much more. Around 64 parameters were taken into consideration.
+                            </div>
+                        </div>
+                 
+                    </div>
+                </div> -->
+            
+                <div class="d-flex">
+                    <div class="text-nowrap">· &nbsp;</div>
+                    <div class="flex-fill">
+                        <div class="font-w-500">Attrition Analysis</div>
+                        
+                        <div class="d-flex justify-content-between mb-2">
+                            <div>Project focused on analysing and predicting the attrition time of a current employee.</div>
+                            <span class="align-self-end ps-1 text-decoration-underline" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" (click)="attritionDesc=!attritionDesc">@if(attritionDesc){Less}@else{More}</span>
+                        </div>
+                        
+                        <div class="collapse" id="collapseExample">
+                            <div>
+                                Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                            </div>
+                            <hr/>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="d-flex">
+                    <div>· &nbsp; </div>
+                    <div>
+                        <div class="font-w-500">Learning and Recommendation</div>
+                        Project focused on analysing and predicting 
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>
 
     <hr class="my-4"/>
+
     <div class="fs-5 font-w-500">
         Education
     </div>
@@ -98,6 +155,31 @@
             <div class="text-small">June 2017 - May 2020 &nbsp;·&nbsp; 2 yrs 2 mos</div>
             <div class="text-small">CGPA 7.6</div>
         </div>
+    </div>
+
+    <div #age (click)="switchAgeTab=!switchAgeTab">
+        @if(!switchAgeTab){
+            @defer (on viewport(age)) {
+                <div class="d-flex justify-content-evenly my-5">
+                    <div class="meter">
+                        <span><span class="progress progress0"></span></span>
+                    </div>
+            
+                    <div class="meter">
+                        <span><span class="progress progress1"></span></span>
+                    </div>
+            
+                    <div class="meter">
+                        <span style="height:50%;"><span class="progress progress2"></span></span>
+                    </div>
+                </div>
+              }
+        }
+        @else {
+            <div class="d-flex  justify-content-center align-items-center">
+                {{myAge[0]}} Years {{myAge[1]}} Months {{myAge[2]}} Days
+            </div>   
+        }
     </div>
 
 </div>

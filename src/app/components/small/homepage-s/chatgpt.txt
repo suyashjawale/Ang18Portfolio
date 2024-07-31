@@ -1,0 +1,63 @@
+To achieve the desired sequence where each animation waits for the previous one to finish, you can use CSS animation delays combined with the `animation-fill-mode` property. This ensures that each animation starts only after the previous one completes. Here’s how you can do it:
+
+1. **HTML Structure**:
+    ```html
+    <div class="meter">
+        <span class="progress"></span>
+        <span class="progress progress1"></span>
+        <span class="progress progress2"></span>
+    </div>
+    ```
+
+2. **CSS**:
+    ```css
+    .meter {
+        height: 10rem;
+        width: 4px;
+        background-color: #233547;
+        position: relative;
+    }
+
+    .meter span {
+        display: block;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .progress {
+        background-color: #ffffff;
+        animation: progressBar 6s ease-in-out infinite;
+        animation-fill-mode: forwards;
+    }
+
+    .progress1 {
+        background-color: #ffffff;
+        animation: progressBar 6s ease-in-out infinite;
+        animation-delay: 6s;
+        animation-fill-mode: forwards;
+    }
+
+    .progress2 {
+        background-color: #ffffff;
+        animation: progressBar 6s ease-in-out infinite;
+        animation-delay: 12s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes progressBar {
+        0% {
+            height: 0;
+        }
+        100% {
+            height: 100%;
+        }
+    }
+    ```
+
+Explanation:
+- Each `.progress` element has the same `progressBar` animation but with different delays.
+- `animation-fill-mode: forwards;` ensures that the animation retains the final state (height: 100%) after completion.
+- Each `.progress` element starts 6 seconds after the previous one (`.progress1` starts 6 seconds after `.progress`, and `.progress2` starts 12 seconds after `.progress`).
+
+This way, you create a continuous loop where each animation starts only after the previous one has finished.
