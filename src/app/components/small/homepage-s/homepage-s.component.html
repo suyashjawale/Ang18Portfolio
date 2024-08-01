@@ -158,27 +158,27 @@
     </div>
 
     <div #age (click)="switchAgeTab=!switchAgeTab">
-        @if(!switchAgeTab){
-            @defer (on viewport(age)) {
-                <div class="d-flex justify-content-evenly my-5">
-                    <div class="meter">
-                        <span><span class="progress progress0"></span></span>
+        @defer (on viewport(age)) {
+            @if(!switchAgeTab){
+                    <div class="d-flex justify-content-evenly my-5">
+                        <div class="meter">
+                            <span><span class="progress progress0"></span></span>
+                        </div>
+                
+                        <div class="meter">
+                            <span><span class="progress progress1"></span></span>
+                        </div>
+                
+                        <div class="meter">
+                            <span style="height:50%;"><span class="progress progress2"></span></span>
+                        </div>
                     </div>
-            
-                    <div class="meter">
-                        <span><span class="progress progress1"></span></span>
-                    </div>
-            
-                    <div class="meter">
-                        <span style="height:50%;"><span class="progress progress2"></span></span>
-                    </div>
-                </div>
-              }
-        }
-        @else {
-            <div class="d-flex  justify-content-center align-items-center">
-                {{myAge[0]}} Years {{myAge[1]}} Months {{myAge[2]}} Days
-            </div>   
+            }
+            @else {
+                <div class="d-flex justify-content-center align-items-center ageTab my-5">
+                    {{myAge[0]}} Years {{myAge[1]}} Months {{myAge[2]}} Days
+                </div>   
+            }
         }
     </div>
 
