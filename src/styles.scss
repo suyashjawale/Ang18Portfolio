@@ -8,6 +8,11 @@ $form-range-track-bg: rgb(226, 226, 226);
 body {
     font-family: 'Poppins', sans-serif !important;
     background-color: #15202b !important;
+    color: rgb(255, 255, 255);
+
+    &::-webkit-scrollbar {
+        width: 0;
+      }
 }
 
 .bg-custom{
@@ -25,6 +30,10 @@ body {
 
 .text-small{
     font-size: small !important;
+}
+
+.text-x-small{
+    font-size: x-small !important;
 }
 
 .font-w-500{

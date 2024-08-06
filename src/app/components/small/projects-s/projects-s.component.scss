@@ -1,1 +1,22 @@
+.tags-radius {
+    border-radius: 0.2rem !important;
+}
 
+#tags {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+    overflow-x: scroll; 
+    mask: linear-gradient(to right,
+    rgba(255, 255, 255, 1) 0%, 
+    rgba(255, 255, 255, 1) 85%,
+    rgba(255, 255, 255, 0) 99%,
+    rgba(255, 255, 255, 0) 100%) 100% 50% / 100% 100% repeat-y;
+}
+
+.border-bg-custom{
+    border-color: #15202b !important;
+}
+
+#tags::-webkit-scrollbar {
+    display: none;
+}

@@ -91,7 +91,9 @@
                         
                         <div class="d-flex justify-content-between mb-2">
                             <div>Project focused on analysing and predicting the attrition time of a current employee.</div>
-                            <span class="align-self-end ps-1 text-decoration-underline" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" (click)="attritionDesc=!attritionDesc">@if(attritionDesc){Less}@else{More}</span>
+                            <div style="min-width: 2.55rem;" class="text-decoration-underline text-end align-self-end" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" (click)="attritionDesc=!attritionDesc">
+                                @if(attritionDesc){Less}@else{More}
+                            </div>
                         </div>
                         
                         <div class="collapse" id="collapseExample">
@@ -161,16 +163,16 @@
         @defer (on viewport(age)) {
             @if(!switchAgeTab){
                     <div class="d-flex justify-content-evenly my-5">
-                        <div class="meter">
-                            <span><span class="progress progress0"></span></span>
+                        <div class="meter rounded">
+                            <span><span class="rounded progress0"></span></span>
                         </div>
                 
-                        <div class="meter">
-                            <span><span class="progress progress1"></span></span>
+                        <div class="meter rounded">
+                            <span><span class="rounded progress0 progress1"></span></span>
                         </div>
                 
-                        <div class="meter">
-                            <span style="height:50%;"><span class="progress progress2"></span></span>
+                        <div class="meter rounded">
+                            <span style="height:50%;"><span class="rounded progress0 progress2"></span></span>
                         </div>
                     </div>
             }
