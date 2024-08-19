@@ -1,5 +1,5 @@
-.tags-radius {
-    border-radius: 0.2rem !important;
+.tags-padding{
+    padding: 0.566rem !important;
 }
 
 #tags {
@@ -19,4 +19,8 @@
 
 #tags::-webkit-scrollbar {
     display: none;
+}
+
+.h-90{
+    height: 90% !important;
 }

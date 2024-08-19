@@ -73,6 +73,10 @@ export function getRoutes(): Routes {
                     path:'playlist',
                     loadComponent: () => import('./components/small/playlist-s/playlist-s.component').then(mod => mod.PlaylistSComponent),
                 },
+                {
+                    path:'search',
+                    loadComponent: () => import('./components/small/search-s/search-s.component').then(mod => mod.SearchSComponent),
+                },
             ]
         }
     ]

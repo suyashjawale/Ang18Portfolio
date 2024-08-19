@@ -4,21 +4,10 @@
     font-weight: 500;
 }
 
-input[type=range]{
-  height: 2.5px;
-  accent-color: white;
-}
-
 .navbar-background{
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     background-color: rgb(21, 32, 43, 0.7);
-}
-
-.blur-filter{
-    filter: blur(30px);
-    -webkit-filter: blur(30px);
-    pointer-events: none;
 }
 
 @keyframes quiet {

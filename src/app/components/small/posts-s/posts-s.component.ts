@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-
+import { NavbarSComponent } from '../navbar-s/navbar-s.component';
 @Component({
   selector: 'app-posts-s',
   standalone: true,
-  imports: [],
+  imports: [NavbarSComponent],
   templateUrl: './posts-s.component.html',
   styleUrl: './posts-s.component.scss'
 })

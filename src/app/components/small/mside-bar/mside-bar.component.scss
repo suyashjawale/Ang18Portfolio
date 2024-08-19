@@ -1,0 +1,10 @@
+input[type=range] {
+    height: 2.5px;
+    accent-color: white;
+}
+
+.blur-filter {
+    filter: blur(30px);
+    -webkit-filter: blur(30px);
+    pointer-events: none;
+}
