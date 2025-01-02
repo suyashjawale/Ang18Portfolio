@@ -1,1 +1,0 @@
-import{Aa as i,Ha as a,Ka as s,R as o,za as r}from"./chunk-IDRMTDUD.js";var m=(()=>{let e=class e{};e.\u0275fac=function(n){return new(n||e)},e.\u0275cmp=o({type:e,selectors:[["app-projects-l"]],standalone:!0,features:[s],decls:2,vars:0,template:function(n,c){n&1&&(r(0,"p"),a(1,"projects-l works!"),i())}});let t=e;return t})();export{m as ProjectsLComponent};

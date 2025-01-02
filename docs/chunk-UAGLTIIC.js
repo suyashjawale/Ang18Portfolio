@@ -1,1 +1,0 @@
-import{Ea as a,Fa as s,R as o,xa as r,ya as i}from"./chunk-JVQMVXH4.js";var m=(()=>{let e=class e{};e.\u0275fac=function(n){return new(n||e)},e.\u0275cmp=o({type:e,selectors:[["app-projects-l"]],standalone:!0,features:[s],decls:2,vars:0,template:function(n,c){n&1&&(r(0,"p"),a(1,"projects-l works!"),i())}});let t=e;return t})();export{m as ProjectsLComponent};

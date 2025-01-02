@@ -1,1 +1,0 @@
-import{Ea as a,Fa as p,R as i,xa as o,ya as s}from"./chunk-JVQMVXH4.js";var m=(()=>{let e=class e{};e.\u0275fac=function(n){return new(n||e)},e.\u0275cmp=i({type:e,selectors:[["app-snippets-l"]],standalone:!0,features:[p],decls:2,vars:0,template:function(n,l){n&1&&(o(0,"p"),a(1,"snippets-l works!"),s())}});let t=e;return t})();export{m as SnippetsLComponent};
