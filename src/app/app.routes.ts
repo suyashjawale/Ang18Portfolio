@@ -76,7 +76,7 @@ export function getRoutes(): Routes {
                 {
                     path:'search',
                     loadComponent: () => import('./components/small/search-s/search-s.component').then(mod => mod.SearchSComponent),
-                },
+                }
             ]
         }
     ]

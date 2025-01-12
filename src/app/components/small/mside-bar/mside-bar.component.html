@@ -1,7 +1,7 @@
 <div class="offcanvas offcanvas-start bg-custom" tabindex="-1" id="menu" aria-labelledby="menuLabel">
 	<div class="offcanvas-header d-flex justify-content-between pe-0">
-		<div>
-			<small>🎉 🥳 Happy Birthday Rushikesh</small>
+		<div [@myAnimation]="isOpen" (@myAnimation.done)="animationDone($event)">
+			<small>{{highLights[currentHighlight]}}</small>
 		</div>
 		<button type="button" class="btn btn-light rounded-start-pill shadow-none py-1 pe-2 border-0"
 		data-bs-dismiss="offcanvas" aria-label="Close">
